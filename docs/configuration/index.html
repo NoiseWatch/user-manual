@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Configuración de los Nidos</title>
+
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- Content -->
+	<div class="container">
+
+		<h1>Configuración del WiFI (opcional)</h1>
+		<form class="form-horizontal">
+		<fieldset>
+			<legend>WiFi</legend>
+			<div class="form-group">
+				<label for="essid" class="col-lg-2 control-label">Nombre de la Red</label>
+				<div class="col-lg-10">
+					<input type="text" class="form-control" id="essid" placeholder="ESSID">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password" class="col-lg-2 control-label">Contraseña WPA</label>
+				<div class="col-lg-10">
+					<input type="password" class="form-control" id="password" placeholder="Contraseña">
+				</div>
+			</div>
+			<button id="wifiDownload" class="btn btn-primary" >Descargar Fichero</button>
+
+		</fieldset>
+		</form>
+
+		<br>
+
+
+		<h1>Configuración del programa</h1>
+		<form class="form">
+		
+		<!--%%%%-->
+		<fieldset>
+			<legend>Horario de funcionamiento</legend>
+			<div class="form-group">
+				<label for="horaInicio" class="control-label">Hora de Inicio (Numero entre 0 y 24)</label>
+				<div>
+					<input type="text" class="form-control" id="horaInicio" placeholder="10" value="10">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="horaFin" class="control-label">Hora de Fin (Numero entre 0 y 24)</label>
+				<div>
+					<input type="text" class="form-control" id="horaFin" placeholder="20" value="20">
+				</div>
+			</div>
+		</fieldset>
+		<!--%%%%-->
+		<fieldset>
+			<legend>Umbrales</legend>
+			Marcar <input style="display:inline" type="text" class="" id="umbraldef" value="60" placeholder="70"> para todas <button id="umbralsetdef" class="btn btn-default">Marcar</button>
+			<br>
+			<br>
+			
+			<div class="col-lg-6">
+			<div class="form-group">
+				<label for="hora0" class="col-lg-1 control-label">00:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora0" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora1" class="col-lg-1 control-label">01:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora1" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora2" class="col-lg-1 control-label">02:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora2" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora3" class="col-lg-1 control-label">03:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora3" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora4" class="col-lg-1 control-label">04:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora4" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora5" class="col-lg-1 control-label">05:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora5" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora6" class="col-lg-1 control-label">06:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora6" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora7" class="col-lg-1 control-label">07:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora7" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora8" class="col-lg-1 control-label">08:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora8" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora9" class="col-lg-1 control-label">09:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora9" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora10" class="col-lg-1 control-label">10:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora10" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora11" class="col-lg-1 control-label">11:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora11" placeholder="70" value="70">
+				</div>
+			</div>
+			<!--ddd-->
+			</div>
+			<div class="col-lg-6">
+							<div class="form-group">
+				<label for="hora12" class="col-lg-1 control-label">12:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora12" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora13" class="col-lg-1 control-label">13:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora13" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora14" class="col-lg-1 control-label">14:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora14" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora15" class="col-lg-1 control-label">15:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora15" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora16" class="col-lg-1 control-label">16:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora16" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora17" class="col-lg-1 control-label">17:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora17" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora18" class="col-lg-1 control-label">18:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora18" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora19" class="col-lg-1 control-label">19:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora19" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora20" class="col-lg-1 control-label">20:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora20" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora21" class="col-lg-1 control-label">21:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora21" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora22" class="col-lg-1 control-label">22:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora22" placeholder="70" value="70">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="hora23" class="col-lg-1 control-label">23:00</label>
+				<div class="col-lg-11">
+					<input type="text" class="form-control" id="hora23" placeholder="70" value="70">
+				</div>
+			</div>
+			</div>
+		
+		</fieldset>
+		<!--%%%%-->
+		<br>
+		<fieldset>
+			<legend>Tiempos de Sonido</legend>
+			<div class="form-group">
+				<label for="soundMinWaitMins" class="control-label">Tiempo mínimo de silencio (Minutos)</label>
+				<div>
+					<input type="text" class="form-control" id="soundMinWaitMins" placeholder="5" value="5">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="soundMaxWaitMins" class="control-label">Tiempo máximo de silencio (Minutos)</label>
+				<div>
+					<input type="text" class="form-control" id="soundMaxWaitMins" placeholder="10" value="10">
+				</div>
+			</div>
+		</fieldset>
+		<!--%%%%-->
+		<fieldset>
+			<legend>Tiempos del Gobo</legend>
+			<div class="form-group">
+				<label for="tiempoReleEncendidoSegs" class="control-label">Duración del encendido (Segundos)</label>
+				<div>
+					<input type="text" class="form-control" id="tiempoReleEncendidoSegs" placeholder="10" value="10">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="tiempoReleDescansosSegs" class="control-label">Tiempo de descanso después de encendido</label>
+				<div>
+					<input type="text" class="form-control" id="tiempoReleDescansosSegs" placeholder="60" value="60">
+				</div>
+			</div>
+		</fieldset>
+
+
+
+
+		<button id="configDownload" class="btn btn-primary" >Descargar Fichero</button>
+		</form>
+
+	</div>
+	<br>
+
+	<!-- After load Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
